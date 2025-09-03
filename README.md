@@ -29,6 +29,29 @@ portfolio-chatbot/
 └─ README.md
 ```
 
+## Deployment
+
+This API is deployed on Render
+
+### Production Endpoint:
+```
+https://maia-portfolio-chatbot.onrender.com/chat
+```
+
+### Deployment Strategy:
+
+- The backend service is linked to this GitHub repo.
+- Every push to the main branch automatically triggers a redeployment on Render.
+- You don’t need to manually redeploy unless you change environment variables or service settings in Render.
+
+### Render Free Tier Behavior:
+
+The app is running on Render’s free tier. 
+
+- After 15 minutes of inactivity, the service is spun down.
+- The first request after idle time can take ~30–60 seconds while the app spins back up (“cold start”). 
+- After that, responses are fast.
+
 ## Pre-requisites
 
 Before running this project, make sure you have:
