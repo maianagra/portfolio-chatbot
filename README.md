@@ -65,7 +65,7 @@ echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
 
 ## Running the Chatbot
 ```
-python main.py
+python -m uvicorn main:app --reload
 ```
 This starts the FastAPI server at http://127.0.0.1:8000.
 
